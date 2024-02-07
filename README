@@ -1,0 +1,11 @@
+goget is yet another tool like wget, ftp, or curl, written in Go with
+two goals in mind:
+
+- support parallel downloads
+- support as many protocols as possible
+
+At the moment, the utility doesn't actually do much. You can compile it
+with `go build .', and then download files over http like so:
+
+	./goget -p $number_of_parallels example.com \
+	    http://example.com/file1 https://examlpe.com/file2
